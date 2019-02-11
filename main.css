@@ -1,0 +1,318 @@
+/* --------------------- Fonts --------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=KoHo');
+
+/* --------------------- Initial setup ---------------------  */ 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    min-height: 100vh;
+}   
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+/* --------------------- Welcome Section --------------------- */
+
+#welcome-section {
+    /*position: absolute;
+    top: 0;*/
+    background: url("images/IMG_1758.jpg") no-repeat center;
+    background-size: cover;
+    /*width: 100%;*/
+    height: 100vh;
+
+    font-family: 'KoHo', sans-serif;
+}
+/* Header */
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* My name */
+
+#intro-name {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 44px;
+    color: white;
+}
+
+#intro-name h1 {
+    margin-top: -20vh;
+}
+
+/* --------------------- About me Section --------------------- */
+
+#about-me {
+    min-height: 100vh;
+    height: 100%;
+    /*width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;*/
+    background: #2a2b32;
+    color: white;
+   
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#about-me-wrapper {
+    max-width: 1005px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me-picture{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+}
+
+#about-me-info {
+    margin-left: 100px;
+    flex: 1;
+    margin-right: 20px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#about-me-info p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#downloadCV {
+    text-align: center;
+}
+
+#downloadCV button {
+    padding: 10px;
+}
+
+/* --------------------- My Vision Section --------------------- */
+
+#my-vision {
+    /*position: absolute;
+    top: 200%;
+    width: 100%;*/
+    height: 100%;
+    min-height: 100vh;
+    color: white; 
+    background: #373331;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#my-vision-wrapper {
+    margin: 0 auto;
+    max-width: 920px;
+    padding: 40px 20px 20px 20px;
+}
+
+#my-vision h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#my-vision p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#meInChildhood {
+    width: 500px;
+    height: 328px;
+    margin: 40px 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------- CV Section --------------------- */
+
+#cv {
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    padding: 80px 20px 80px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#cv-wrapper {
+    max-width: 1005px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.unrow {
+    border: none;
+    margin-bottom: unset;
+    padding-bottom: unset;
+}
+
+.col1 {
+    text-transform: uppercase;
+    color: gray;
+    width: 15%;
+}
+
+.col2 {
+    width: 85%;
+    margin-left: 15%;
+}
+
+.info {
+    margin-bottom: 18px;
+    margin-top: 9px;
+    font-style: italic;
+}
+
+.col2 p {
+    color: #838C95;
+}
+
+.lastp {
+    margin-bottom: 30px;
+}
+
+.skillsp {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* --------------------- Projects Section --------------------- */
+
+#projects{
+    min-height: 100vh;
+    height: 100%;
+    background: #0d627a;
+    padding: 40px 20px 20px 20px;
+}
+
+#projects h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#projects-wrapper {
+    max-width: 1005px;
+    margin: 0 auto;
+}
+
+#projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project {
+    height: auto;
+    margin: 0 30px 50px 30px;
+    text-align: center;
+}
+
+.project-pic {
+    max-width: 80%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.project-description, .project-description a {
+    color: white;
+}
+
+.project-description p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* --------------------- Connect Section --------------------- */
+
+#connect {
+    min-height: 100vh;
+    height: 100%;
+    padding: 40px 20px 20px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333;
+    display: grid;
+    align-items: center;
+}
+
+#connect-wrapper {
+    margin: 0 auto;
+    max-width: 1005px;
+}
+
+#connect-wrapper h2 {
+    text-align: center;
+}
+
+#memes {
+    font-size: 8px;
+}
+
+#icons {
+    margin-top: 100px;
+    text-align: center;
+}
+
+a .fas, a .fab {
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+a:hover .fas, a:hover .fab {
+    color: white;
+    background-color: black;
+    border: none;
+}
