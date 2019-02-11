@@ -71,7 +71,7 @@ a {
 /* --------------------- About me Section --------------------- */
 
 #about-me {
-    max-height: 100vh;
+    min-height: 100vh;
     height: 100%;
     background: #2a2b32;
     color: white;
